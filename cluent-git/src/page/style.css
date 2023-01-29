@@ -1,0 +1,55 @@
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.header {
+  background-color: red;
+  height: 80px;
+}
+
+.header-con {
+  display: flex;
+  justify-content: space-evenly;
+  height: 80px;
+  align-items: center;
+}
+.logo a {
+  color: #ffff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: medium;
+}
+.menu {
+  display: flex;
+  list-style-type: none;
+}
+.menu li {
+  padding-right: 2rem;
+}
+.menu li a {
+  text-decoration: none;
+  color: #ffff;
+}
+.mobile {
+  display: none;
+}
+
+@media screen and (max-width: 480px) {
+  .mobile {
+    display: block;
+    color: #fff;
+    font-size: 1rem;
+  }
+  .header {
+    padding: 2rem;
+  }
+  .menu {
+    width: 100%;
+    height: auto;
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    top: 64;
+  }
+}
